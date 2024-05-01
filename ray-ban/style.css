@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gillroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #111; */
+    position: relative;
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    /* background-color: #111111; */
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+}
+#back{
+    height: 100%;
+    width: 100%;
+    /* background-color: #be4444; */
+    position: absolute;
+
+}
+#working-area{
+    width:80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* border: 1px solid white; */
+    position: relative;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+#nav img{
+    height: 60px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+}
+#nav a{
+    pointer-events: all;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top:5vh ;
+    transform: translate(0%,-50%);
+}
+#hero-left{
+   min-width: 50%;
+}
+#hero-left .elem{
+    overflow: hidden;
+    height: 9vw;
+    position: relative;
+}
+#hero-left .elem h1:nth-child(1){
+    top:0;
+}
+#hero-left .elem h1{
+    position: absolute;
+    top:100%;
+    left:0;
+    color: #fff;
+    font-family: "kajiro";
+    font-size:8vw ;
+    font-weight: 100;
+}
+.left-btn{
+    pointer-events: all;
+    font-size: 2.7vw;
+    padding: .8vw 3vw;
+    margin-top: 1vw;
+    font-family: "kajiro";
+}
+   
+#hero-right{
+    width: 17%;
+    /* background-color: rgb(217, 119, 22); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+#hero-right p{
+    text-align: right;
+    margin-bottom: 30px;
+}
+#hero-right #right-box{
+    height: 170px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1527203561188-dae1bc1a417f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHBvcnRyYWl0fGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+}
+#hero-right :nth-child(3){
+    margin-bottom: 50px;
+
+}
